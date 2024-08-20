@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Page</title>
+  <style>
+    body {
+      background: #000000; /* Use hex color code for background */
+      color: #ffffff; /* Use hex color code for text color */
+      font-family: 'Arial', sans-serif; /* Font family */
+    }
+    
+    .container {
+      max-width: 400px; /* Set max width */
+      margin: 100px auto 0 auto; /* Center horizontally and add top margin */
+      padding: 20px; /* Padding inside container */
+      background: #ffffff; /* Set background color */
+      border-radius: 5px; /* Rounded corners */
+    }
+    
+    h1 {
+      color: #000000; /* Heading color */
+      text-align: center; /* Center align the heading */
+    }
+    
+    label, input {
+      color: #000000; /* Set input and label text color */
+    }
+
+    .form-group {
+      margin-bottom: 20px; /* Space below each form group */
+    }
+    
+    .form-group label {
+      display: block; /* Label as block element */
+      margin-bottom: 5px; /* Space below label */
+    }
+    
+    .form-group input {
+      width: 100%; /* Full width input */
+      padding: 8px; /* Padding inside input */
+      border: 1px solid #000000; /* Border color */
+      border-radius: 3px; /* Rounded corners */
+    }
+    
+    .form-group select {
+      width: 100%; /* Full width select */
+      padding: 8px; /* Padding inside select */
+      border: 1px solid #000000; /* Border color */
+      border-radius: 3px; /* Rounded corners */
+    }
+    
+    .form-group input[type="submit"] {
+      background: #000000; /* Button background color */
+      color: #ffffff; /* Button text color */
+      cursor: pointer; /* Show pointer cursor on hover */
+    }
+    
+    .form-group input[type="submit"]:hover {
+      background: #ffffff; /* Change background on hover */
+      color: #000000; /* Change text color on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Signup</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="batch">Batch:</label>
+        <select id="batch" name="batch" required>
+          <option value="sigma1">Sigma 1.0</option>
+          <option value="sigma2">Sigma 2.0</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Signup">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
